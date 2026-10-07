@@ -48,7 +48,7 @@ npm start
 | `speakingStyle` | 존댓말, 어휘와 말투           | 친근한 반말, 감탄과 질문을 자주 사용                      |
 | `rules`         | 답변 길이·구조·행동           | 짧고 밝게 답하고, 사용자의 말에 적극적으로 반응하기       |
 
-`public/character.jpg`를 다른 파일로 대체하여 캐릭터의 프로필도 바꾸어 보세요.
+`public/character.png`를 다른 파일로 대체하여 캐릭터의 프로필도 바꾸어 보세요.
 
 `buildCharacterInstructions()`는 이 설정을 한 개의 지침 문자열로 만듭니다. 화면이나 API 코드에 별도의 긴 프롬프트를 복사할 필요가 없습니다. 첫 인사는 API 응답이 아닌 고정된 환영 문구이며, 실제 대화 기록과 분리됩니다.
 
@@ -87,7 +87,7 @@ character.ts ── 표시 정보 ──> page.tsx ──> Chat.tsx
 | `src/lib/chat.ts`           | 공용 메시지 타입, 제한, 실제 값 검증              |
 | `src/app/layout.tsx`        | 공통 HTML과 한국어 설정                           |
 | `src/app/globals.css`       | 모바일 대응 화면                                  |
-| `public/character.jpg`      | 캐릭터 프로필 이미지 경로                         |
+| `public/character.png`      | 캐릭터 프로필 이미지 경로                         |
 
 화면의 `handleSubmit` → 서버의 `POST` → `generateReply` → `setMessages` 순서로 읽어 보세요. 브라우저는 OpenAI에 직접 요청하지 않습니다. `server-only`가 붙은 파일을 클라이언트에서 가져오면 빌드 오류가 발생하여 서버 코드의 잘못된 사용을 알려 줍니다.
 
